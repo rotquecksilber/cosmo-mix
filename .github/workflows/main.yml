@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Use Node.js 16.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          node-version: 18.x
 
       - name: Checkout code
         uses: actions/checkout@v3
@@ -25,16 +25,10 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build Backend Docker image
-        run: docker build -t rotquecksilber/kupi_backend ./backend
+        run: docker build -t rotquecksilber/cosmo-mix
 
       - name: Push Backend Docker image
-        run: docker push rotquecksilber/kupi_backend
-
-      - name: Build Frontend Docker image
-        run: docker build -t rotquecksilber/kupi_frontend ./frontend
-
-      - name: Push Frontend Docker image
-        run: docker push rotquecksilber/kupi_frontend
+        run: docker push rotquecksilber/cosmo-mix
 
       - name: Clone repository on server
         run: |
@@ -49,22 +43,7 @@ jobs:
           echo "$DEPLOY_KEY" > deploy_key.pem
           chmod 600 deploy_key.pem
           ssh -i deploy_key.pem -o "StrictHostKeyChecking=no" ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} <<EOF
-            export DB_HOST=${{ secrets.DB_HOST }}
-            export DB_PORT=${{ secrets.DB_PORT }}
-            export DB_USERNAME=${{ secrets.DB_USERNAME }}
-            export DB_PASSWORD=${{ secrets.DB_PASSWORD }}
-            export DB_NAME=${{ secrets.DB_NAME }}
-            export DB_SYNCHRONIZE=${{ secrets.DB_SYNCHRONIZE }}
-            export TELEGRAM_BOT_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }}
-            export TELEGRAM_CHAT_ID=${{ secrets.TELEGRAM_CHAT_ID }}
-            export PORT=${{ secrets.PORT }}
-            export JWT_SECRET=${{ secrets.JWT_SECRET }}
-            export POSTGRES_HOST=${{ secrets.POSTGRES_HOST }}
-            export POSTGRES_USER=${{ secrets.POSTGRES_USER }}
-            export POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
-            export POSTGRES_DB=${{ secrets.POSTGRES_DB }}
-            export POSTGRES_PGDATA=${{ secrets.POSTGRES_PGDATA }}
-            cd /home/${{ secrets.SERVER_USERNAME }}/nodejs-docker-and-compose
+            cd /home/${{ secrets.SERVER_USERNAME }}/cosmo-mix
             docker-compose down
             docker-compose pull
             docker-compose up -d
