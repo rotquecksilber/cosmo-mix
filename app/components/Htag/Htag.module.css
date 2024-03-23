@@ -1,0 +1,64 @@
+.h2 {
+    font-size: 32px;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.transform_no {
+    text-transform: none;
+}
+.transform_yes {
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 1425px) {
+    .h3 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 1115px) {
+    .h3 {
+        font-size: 18px;
+    }
+.h2 {
+    font-size: 28px;
+}
+}
+
+@media screen and (max-width: 945px) {
+    .h3 {
+        font-size: 16px;
+    }
+    .h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 815px) {
+    .h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 735px) {
+    .h2 {
+        font-size: 16px;
+    }
+    .h3 {
+        font-size: 16px;
+    }
+
+}
+

@@ -1,0 +1,15 @@
+.carousel_desktop {
+    margin: 15px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw
+}
+
+@media screen and (max-width: 650px) {
+    .carousel_desktop {
+        display: none;
+    }
+}
+
