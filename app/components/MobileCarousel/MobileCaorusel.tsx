@@ -27,7 +27,7 @@ export const MobileCarousel = () => {
                         htagText={["Тональные", "средства"]}
                         spanText={"Идеальное сочетание текстуры и оттенков"}
                         imageAlt={"Контрактное производство тональных кремов"}
-                        imageSrc={"/home/foundation_.jpg"}
+                        imageSrc={"/home/foundation_.webp"}
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
