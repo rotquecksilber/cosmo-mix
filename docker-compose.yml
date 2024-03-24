@@ -1,13 +1,9 @@
-version: '3.7'
+version: '3.9'
 
 services:
-  app:
-    container_name: nextjs_app
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
+  nextapp:
+    container_name: cosmo-mix
+    image: cosmo-mix
+    build: .
     ports:
-      - 8081:80
-    restart: unless-stopped
+      - "3000:3000"
