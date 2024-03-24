@@ -27,7 +27,7 @@ export const MobileCarousel = () => {
                         htagText={["Тональные", "средства"]}
                         spanText={"Идеальное сочетание текстуры и оттенков"}
                         imageAlt={"Контрактное производство тональных кремов"}
-                        imageSrc={"/home/foundation.jpg"}
+                        imageSrc={"/home/foundation_.jpg"}
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -37,7 +37,7 @@ export const MobileCarousel = () => {
                         htagText={["Румяна"]}
                         spanText={"Яркие цвета и ощущение свежести"}
                         imageAlt={"Контрактное производство румян"}
-                        imageSrc={"/home/blush.jpg"}
+                        imageSrc={"/home/blush_.jpg"}
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -47,7 +47,7 @@ export const MobileCarousel = () => {
                         htagText={["Помады"]}
                         spanText={"Стойкость и насыщенность цвета"}
                         imageAlt={"Контрактное производство помад"}
-                        imageSrc={"/home/lipstick.jpg"}
+                        imageSrc={"/home/lipstick_.jpg"}
                     />
                 </SwiperSlide>
             </Swiper>

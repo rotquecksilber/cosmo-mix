@@ -27,7 +27,7 @@ export const MobileCarouselS = () => {
                         htagText={["Кремы", "для лица"]}
                         spanText={"Эффективный и роскошный уход"}
                         imageAlt={"Контрактное производство кремов для лица"}
-                        imageSrc={"/home/creams_for_face.jpg"}
+                        imageSrc={"/home/creams_for_face_.jpg"}
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -35,7 +35,7 @@ export const MobileCarouselS = () => {
                         htagText={["Маски", "и патчи"]}
                         spanText={"Интенсивный уход и отличное качество"}
                         imageAlt={"Контрактное производство масок и патчей"}
-                        imageSrc={"/home/masks.jpg"}
+                        imageSrc={"/home/masks_.jpg"}
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -45,7 +45,7 @@ export const MobileCarouselS = () => {
                         htagText={["Тоники"]}
                         spanText={"Увлажняющий уход для кожи"}
                         imageAlt={"Контрактное производство тоников для лица"}
-                        imageSrc={"/home/tonics.jpg"}
+                        imageSrc={"/home/tonics_.jpg"}
                     />
                 </SwiperSlide>
             </Swiper>
