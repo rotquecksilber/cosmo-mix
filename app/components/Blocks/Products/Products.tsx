@@ -8,6 +8,7 @@ import Link from "next/link";
 import {MobileCarouselS} from "@/app/components/MobileCarousel/MobileCaorusel_2";
 
 
+
 export const Products = (): React.JSX.Element => {
     return (
         <section>
@@ -48,7 +49,6 @@ export const Products = (): React.JSX.Element => {
                     />
                 </div>
                 <MobileCarousel/>
-
                 <div className={cn(styles.content)}>
                     <div className={cn(styles.content_title)}>
                     </div>
