@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build Backend Docker image
-        run: docker build -t rotquecksilber/cosmo-mix
+        run: docker build -t rotquecksilber/cosmo-mix .
 
       - name: Push Backend Docker image
         run: docker push rotquecksilber/cosmo-mix
