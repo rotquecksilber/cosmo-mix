@@ -34,7 +34,7 @@ export const Areas = (): React.JSX.Element => {
                         role={"img"}
                         height={676}
                         width={630}
-                        src={"/home/Cosmetics.webp"}
+                        src={"/home/Cosmetics_.webp"}
                         alt={"Контрактное производство декоративной косметики"}
                     />
                     <div className={cn(localStyles.content_wrapper)}>

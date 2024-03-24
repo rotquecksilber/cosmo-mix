@@ -15,14 +15,14 @@ export const ButtonBanner = ({ imageSrc, imageAlt, htagText, spanText, htagClass
             {index !== htagText.length - 1 && <br />}
         </React.Fragment>
     ));
-    const handleClick = (e: React.TouchEvent) => {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>) => {
         if (isSwiping) {
             e.preventDefault();
         }
     }
 
     return (
-        <Link href={"/"} className={cn(styles.button)} onTouchStart={handleClick}>
+        <Link href={"/"} className={cn(styles.button)} onClick={handleClick}>
             <div>
                 <Image
                     className={cn(styles.button_image)}
