@@ -1,1 +1,1 @@
-Cosmo-mix test 5
+Cosmo-mix test 6
