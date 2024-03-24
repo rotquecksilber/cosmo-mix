@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "$DEPLOY_KEY" > deploy_key.pem
           chmod 600 deploy_key.pem
-          ssh -i deploy_key.pem -o "StrictHostKeyChecking=no" ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "cd /home/${{ secrets.SERVER_USERNAME }}/nodejs-docker-and-compose && git pull"
+          ssh -i deploy_key.pem -o "StrictHostKeyChecking=no" ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} "cd /home/${{ secrets.SERVER_USERNAME }}/cosmo-mix && git pull"
         env:
           DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
 
