@@ -186,37 +186,37 @@ export const HeaderMenu = (): React.JSX.Element => {
                     <ul className={cn(styles.nav_main_li)}>
                         {/* Ссылки на разделы сайта */}
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/about")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/about"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 О нас
                             </Link>
                         </li>
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/production")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/production"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 Производство
                             </Link>
                         </li>
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/products")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/products"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 Продукция
                             </Link>
                         </li>
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/cases")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/cases"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 Кейсы
                             </Link>
                         </li>
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/blog")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/blog"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 Блог
                             </Link>
                         </li>
                         <li className={cn(styles.nav_li__mobile, {[styles.nav_active]: isActive("/contacts")})}>
-                            <Link className={cn(styles.nav_main_link)} href={"/contacts"} tabIndex={0}
+                            <Link className={cn(styles.nav_main_link)} href={"/"} tabIndex={0}
                                   onKeyDown={handleKeyPress}>
                                 Контакты
                             </Link>

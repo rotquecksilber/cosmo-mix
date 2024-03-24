@@ -7,7 +7,7 @@ import { ButtonBannerProps } from "@/app/components/ButtonBanner/ButtonBanner.pr
 import {montserrat} from "@/app/(site)/fonts/fonts";
 import Link from "next/link";
 
-export const ButtonBanner = ({ imageSrc, imageAlt, htagText, spanText, htagClassName, spanClassName }: ButtonBannerProps): React.JSX.Element => {
+export const ButtonBanner = ({ imageSrc, imageAlt, htagText, spanText, htagClassName, spanClassName, isSwiping }: ButtonBannerProps): React.JSX.Element => {
     // Обходим массив htagText и добавляем тег <br/> между элементами
     const htagWithBr = htagText.map((text, index) => (
         <React.Fragment key={index}>
@@ -15,9 +15,14 @@ export const ButtonBanner = ({ imageSrc, imageAlt, htagText, spanText, htagClass
             {index !== htagText.length - 1 && <br />}
         </React.Fragment>
     ));
+    const handleClick = (e: React.TouchEvent) => {
+        if (isSwiping) {
+            e.preventDefault();
+        }
+    }
 
     return (
-        <Link href={"/"} className={cn(styles.button)}>
+        <Link href={"/"} className={cn(styles.button)} onTouchStart={handleClick}>
             <div>
                 <Image
                     className={cn(styles.button_image)}

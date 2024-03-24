@@ -36,7 +36,7 @@ export const Products = (): React.JSX.Element => {
                         htagText={["Румяна"]}
                         spanText={"Яркие цвета и ощущение свежести"}
                         imageAlt={"Контрактное производство румян"}
-                        imageSrc={"/home/blush_.jpg"}
+                        imageSrc={"/home/blush_.webp"}
                     />
                     <ButtonBanner
                         htagClassName={"button_htag_add"}
@@ -44,7 +44,7 @@ export const Products = (): React.JSX.Element => {
                         htagText={["Помады"]}
                         spanText={"Стойкость и насыщенность цвета"}
                         imageAlt={"Контрактное производство помад"}
-                        imageSrc={"/home/lipstick_.jpg"}
+                        imageSrc={"/home/lipstick_.webp"}
                     />
                 </div>
                 <MobileCarousel/>
@@ -63,13 +63,13 @@ export const Products = (): React.JSX.Element => {
                         htagText={["Кремы", "для лица"]}
                         spanText={"Эффективный и роскошный уход"}
                         imageAlt={"Контрактное производство кремов для лица"}
-                        imageSrc={"/home/creams_for_face_.jpg"}
+                        imageSrc={"/home/creams_for_face_.webp"}
                     />
                     <ButtonBanner
                         htagText={["Маски", "и патчи"]}
                         spanText={"Интенсивный уход и отличное качество"}
                         imageAlt={"Контрактное производство масок и патчей"}
-                        imageSrc={"/home/masks_.jpg"}
+                        imageSrc={"/home/masks_.webp"}
                     />
                     <ButtonBanner
                         htagClassName={"button_htag_add"}
@@ -77,7 +77,7 @@ export const Products = (): React.JSX.Element => {
                         htagText={["Тоники"]}
                         spanText={"Увлажняющий уход для кожи"}
                         imageAlt={"Контрактное производство тоников для лица"}
-                        imageSrc={"/home/tonics_.jpg"}
+                        imageSrc={"/home/tonics_.webp"}
                     />
                 </div>
                 <MobileCarouselS/>

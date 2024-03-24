@@ -28,13 +28,13 @@ export const Areas = (): React.JSX.Element => {
             {/* Блок с изображениями и описаниями направлений */}
             <div className={cn(localStyles.content_images)}>
                 {/* Ссылка на страницу с информацией о декоративной косметике */}
-                <Link href={"/production/dekorativnaya_kosmetika"} className={cn(localStyles.content_button)}>
+                <Link href={"/"} className={cn(localStyles.content_button)}>
                     <Image
                         className={cn(localStyles.content_image__big)}
                         role={"img"}
                         height={676}
                         width={630}
-                        src={"/home/Cosmetics.jpg"}
+                        src={"/home/Cosmetics.webp"}
                         alt={"Контрактное производство декоративной косметики"}
                     />
                     <div className={cn(localStyles.content_wrapper)}>
@@ -50,13 +50,13 @@ export const Areas = (): React.JSX.Element => {
                 </Link>
 
                 {/* Ссылка на страницу с информацией о уходовой косметике */}
-                <Link href={"/production/uhodovaya_kosmetika"} className={cn(localStyles.content_button)}>
+                <Link href={"/"} className={cn(localStyles.content_button)}>
                     <Image
                         className={cn(localStyles.content_image__big)}
                         role={"img"}
                         height={676}
                         width={630}
-                        src={"/home/Creams.jpg"}
+                        src={"/home/Creams.webp"}
                         alt={"Контрактное производство декоративной косметики"}
                     />
                     <div className={cn(localStyles.content_wrapper, localStyles.content_wrapper_2)}>
