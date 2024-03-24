@@ -18,18 +18,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-
-      - name: Build Backend Docker image
-        run: docker build -t rotquecksilber/cosmo-mix .
-
-      - name: Push Backend Docker image
-        run: docker push rotquecksilber/cosmo-mix
-
       - name: Clone repository on server
         run: |
           echo "$DEPLOY_KEY" > deploy_key.pem
@@ -45,7 +33,7 @@ jobs:
           ssh -i deploy_key.pem -o "StrictHostKeyChecking=no" ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }} <<EOF
             cd /home/${{ secrets.SERVER_USERNAME }}/cosmo-mix
             docker-compose down
-            docker-compose pull
+            docker-compose build
             docker-compose up -d
             docker image prune -f
           EOF
