@@ -1,4 +1,4 @@
-version: '3.9'
+version: '2.2'
 
 services:
   nextapp:
@@ -7,3 +7,4 @@ services:
     build: .
     ports:
       - "3000:3000"
+    restart: always
