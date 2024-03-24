@@ -17,7 +17,6 @@ export const MobileCarousel = () => {
         <div className={styles.carouselContainer}>
             <Swiper
                 effect={'cards'}
-                grabCursor={true}
                 modules={[EffectCards]}
                 className="mySwiper"
                 loop={true}

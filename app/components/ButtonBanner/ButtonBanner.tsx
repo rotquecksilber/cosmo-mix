@@ -26,6 +26,7 @@ export const ButtonBanner = ({ imageSrc, imageAlt, htagText, spanText, htagClass
                     width={416}
                     height={451}
                     alt={imageAlt}
+                    quality={"100"}
                 />
                 <div className={cn(styles.button_text)}>
                     <div className={cn(styles.button_htag, htagClassName)}>
