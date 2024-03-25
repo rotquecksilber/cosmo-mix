@@ -7,6 +7,7 @@ import {montserrat} from "@/app/(site)/fonts/fonts";
 import Link from "next/link";
 import {MobileCarouselS} from "@/app/components/MobileCarousel/MobileCaorusel_2";
 import {CardStack} from "@/app/components/TestCarousel/TestCarousel";
+import {CardStack_2} from "@/app/components/TestCarousel/TestCarousel_2";
 
 
 
@@ -49,8 +50,8 @@ export const Products = (): React.JSX.Element => {
                         imageSrc={"/home/lipstick_.webp"}
                     />
                 </div>
-                <MobileCarousel/>
-<CardStack/>
+<CardStack_2/>
+
                 <div className={cn(styles.content)}>
                     <div className={cn(styles.content_title)}>
                     </div>
@@ -82,8 +83,10 @@ export const Products = (): React.JSX.Element => {
                         imageSrc={"/home/tonics_.webp"}
                     />
                 </div>
-                <MobileCarouselS/>
+                <CardStack/>
             </div>
+            <div style={{marginTop: "40px"}}></div>
+
         </section>
     )
 }
