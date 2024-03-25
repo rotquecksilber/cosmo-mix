@@ -28,7 +28,7 @@ const CARD_DATA = [
         imageSrc: "/home/lipstick_.webp"
     },
 ];
-const CARD_OFFSET = 30;
+const CARD_OFFSET = 25;
 const SCALE_FACTOR = 0.1;
 
 export const CardStack_2 = () => {
