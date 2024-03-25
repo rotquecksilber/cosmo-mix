@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import cn from "classnames";
@@ -57,6 +57,22 @@ export const HeaderMenu = (): React.JSX.Element => {
     const toggleMenu = () => {
             setMenuOpen(!menuOpen);
     };
+    const mainContentRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        const handleClickOutsideMenu = (event: MouseEvent) => {
+            if (mainContentRef.current && event.target instanceof Node && !mainContentRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        document.addEventListener("click", handleClickOutsideMenu);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutsideMenu);
+        };
+    }, []);
+
 
     const menuVariants = {
         open: {
@@ -138,7 +154,7 @@ export const HeaderMenu = (): React.JSX.Element => {
     return (
         <header className={cn(styles.header)}>
             <div className="width">
-                <nav className={cn(montserrat.className, styles.nav, styles.nav_main)} aria-label="Основное меню"
+                <nav ref={mainContentRef} className={cn(montserrat.className, styles.nav, styles.nav_main)} aria-label="Основное меню"
                      role={"navigation"}>
                     <ul className={cn(styles.nav_mobile)}>
                         <li>
