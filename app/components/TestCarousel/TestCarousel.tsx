@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import {ButtonBanner} from "@/app/components";
 
 
 const CARD_COLORS = ["#266678", "#cb7c7a", "#36a18b"];
@@ -27,7 +29,7 @@ export const CardStack = () => {
                             key={color}
                             style={{
                                 ...cardStyle,
-                                backgroundColor: color,
+
                                 cursor: canDrag ? "grab" : "auto"
                             }}
                             animate={{
@@ -42,7 +44,22 @@ export const CardStack = () => {
                             }}
                             onDragEnd={() => moveToEnd(index)}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        />
+
+                        >
+                            <motion.div drag="x" dragConstraints={{left: 0, right: 0}}
+                                        onDragEnd={() => moveToEnd(index)}>
+                                <ButtonBanner
+                                    htagClassName={"button_htag_add"}
+                                    spanClassName={"button_span_add"}
+                                    htagText={["Тоники"]}
+                                    spanText={"Увлажняющий уход для кожи"}
+                                    imageAlt={"Контрактное производство тоников для лица"}
+                                    imageSrc={"/home/tonics_.webp"}
+
+                                />
+                            </motion.div>
+
+                        </motion.li>
                     );
                 })}
             </ul>
