@@ -8,4 +8,5 @@ export interface ButtonBannerProps {
     htagClassName?: string;
     spanClassName?: string;
     isSwiping?: boolean;
+    onDragEnd?: () => void;
 }

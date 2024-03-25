@@ -1,27 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {ButtonBanner} from "@/app/components";
 
-const CARD_BUTTONBANNERS = [
-    {
-        htagText: ["Кремы", "для лица"],
-        spanText: "Эффективный и роскошный уход",
-        imageAlt: "Контрактное производство кремов для лица",
-        imageSrc: "/home/creams_for_face_.webp",
-    },
-    {
-        htagText: ["Маски", "и патчи"],
-        spanText: "Интенсивный уход и отличное качество",
-        imageAlt: "Контрактное производство масок и патчей",
-        imageSrc: "/home/masks_.webp",
-    },
-    {
-        htagText: ["Тоники"],
-        spanText: "Увлажняющий уход для кожи",
-        imageAlt: "Контрактное производство тоников для лица",
-        imageSrc: "/home/tonics_.webp",
-    },
-];
+
 const CARD_COLORS = ["#266678", "#cb7c7a", "#36a18b"];
 const CARD_OFFSET = 40;
 const SCALE_FACTOR = 0.1;
@@ -39,36 +19,30 @@ export const CardStack = () => {
     return (
         <div style={wrapperStyle}>
             <ul style={cardWrapStyle}>
-                {CARD_BUTTONBANNERS.map((buttonContent, index) => {
+                {cards.map((color, index) => {
                     const canDrag = index === 0;
 
                     return (
                         <motion.li
-                            key={index}
+                            key={color}
                             style={{
                                 ...cardStyle,
-                                cursor: canDrag ? "grab" : "auto",
+                                backgroundColor: color,
+                                cursor: canDrag ? "grab" : "auto"
                             }}
                             animate={{
                                 x: index * CARD_OFFSET,
                                 scale: 1 - index * SCALE_FACTOR,
-                                zIndex: -index,
+                                zIndex: -index
                             }}
                             drag={canDrag ? "x" : false}
                             dragConstraints={{
                                 left: 0,
-                                right: 0,
+                                right: 0
                             }}
                             onDragEnd={() => moveToEnd(index)}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                        >
-                            <ButtonBanner
-                                htagText={buttonContent.htagText}
-                                spanText={buttonContent.spanText}
-                                imageAlt={buttonContent.imageAlt}
-                                imageSrc={buttonContent.imageSrc}
-                            />
-                        </motion.li>
+                        />
                     );
                 })}
             </ul>

@@ -15,6 +15,7 @@ export const ButtonBanner = ({
                                  htagClassName,
                                  spanClassName,
                                  isSwiping,
+    onDragEnd,
                              }: ButtonBannerProps): React.JSX.Element => {
     // Обходим массив htagText и добавляем тег <br/> между элементами
     const htagWithBr = htagText.map((text, index) => (
@@ -23,6 +24,8 @@ export const ButtonBanner = ({
             {index !== htagText.length - 1 && <br />}
         </React.Fragment>
     ));
+
+
 
     return (
             <Link className={cn(styles.button)} href={"/"}>
