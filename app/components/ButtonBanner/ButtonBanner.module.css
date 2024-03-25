@@ -120,10 +120,7 @@ margin-left: 20px;
     .button:hover {
         opacity: 1;
     }
-    .button {
 
-        cursor: grab;
-    }
 }
 
 
