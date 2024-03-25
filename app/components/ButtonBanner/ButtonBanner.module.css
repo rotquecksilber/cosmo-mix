@@ -88,6 +88,13 @@
     .button_span_add {
         margin-top: 12px;
     }
+    .button:hover {
+        opacity: 1;
+    }
+    .button {
+
+        cursor: grab;
+    }
 
 }
 
@@ -109,6 +116,13 @@
     }
     .button_htag {
 margin-left: 20px;
+    }
+    .button:hover {
+        opacity: 1;
+    }
+    .button {
+
+        cursor: grab;
     }
 }
 
