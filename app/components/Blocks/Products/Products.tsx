@@ -6,7 +6,6 @@ import {ButtonBanner, Htag, MobileCarousel} from "@/app/components";
 import {montserrat} from "@/app/(site)/fonts/fonts";
 import Link from "next/link";
 import {MobileCarouselS} from "@/app/components/MobileCarousel/MobileCaorusel_2";
-import {TestCarousel} from "@/app/components/TestCarousel/TestCaorusel";
 
 
 
@@ -50,7 +49,6 @@ export const Products = (): React.JSX.Element => {
                     />
                 </div>
                 <MobileCarousel/>
-                <TestCarousel/>
 
                 <div className={cn(styles.content)}>
                     <div className={cn(styles.content_title)}>

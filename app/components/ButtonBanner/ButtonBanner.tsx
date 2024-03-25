@@ -26,7 +26,7 @@ export const ButtonBanner = ({
 
     return (
 
-            <a className={cn(styles.button)} href={"/"}>
+            <Link className={cn(styles.button)} href={"/"}>
                 <div>
                     <Image
                         className={cn(styles.button_image)}
@@ -48,7 +48,7 @@ export const ButtonBanner = ({
                         </div>
                     </div>
                 </div>
-            </a>
+            </Link>
 
     );
 };

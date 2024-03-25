@@ -1,4 +1,3 @@
-"use client";
 import cn from "classnames";
 import styles from "./MobileCaorusel.module.css";
 import { ButtonBanner } from "@/app/components";
@@ -13,15 +12,6 @@ import { EffectCards } from 'swiper/modules';
 
 
 export const MobileCarouselS = () => {
-    const [isSwiping, setIsSwiping] = useState(false);
-
-    const handleTouchStart = () => {
-        setIsSwiping(false);
-    }
-
-    const handleTouchMove = () => {
-        setIsSwiping(true);
-    }
     return (
         <div className={styles.carouselContainer}>
             <Swiper
@@ -30,8 +20,8 @@ export const MobileCarouselS = () => {
                 modules={[EffectCards]}
                 className="mySwiper"
                 loop={true}
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
+                preventClicks={false}
+
             >
                 <SwiperSlide className={styles.slide}>
                     <ButtonBanner
@@ -39,7 +29,7 @@ export const MobileCarouselS = () => {
                         spanText={"Эффективный и роскошный уход"}
                         imageAlt={"Контрактное производство кремов для лица"}
                         imageSrc={"/home/creams_for_face_.webp"}
-                        isSwiping={isSwiping}
+
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -48,7 +38,7 @@ export const MobileCarouselS = () => {
                         spanText={"Интенсивный уход и отличное качество"}
                         imageAlt={"Контрактное производство масок и патчей"}
                         imageSrc={"/home/masks_.webp"}
-                        isSwiping={isSwiping}
+
                     />
                 </SwiperSlide>
                 <SwiperSlide className={styles.slide}>
@@ -59,7 +49,7 @@ export const MobileCarouselS = () => {
                         spanText={"Увлажняющий уход для кожи"}
                         imageAlt={"Контрактное производство тоников для лица"}
                         imageSrc={"/home/tonics_.webp"}
-                        isSwiping={isSwiping}
+
                     />
                 </SwiperSlide>
             </Swiper>
