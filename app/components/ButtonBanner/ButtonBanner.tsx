@@ -24,15 +24,9 @@ export const ButtonBanner = ({
         </React.Fragment>
     ));
 
-    const handleMouseDown = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        if (isSwiping) {
-            e.preventDefault();
-        }
-    };
-
     return (
 
-            <a className={cn(styles.button)} onMouseDown={handleMouseDown} href={"/"}>
+            <a className={cn(styles.button)} href={"/"}>
                 <div>
                     <Image
                         className={cn(styles.button_image)}
