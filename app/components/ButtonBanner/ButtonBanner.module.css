@@ -93,12 +93,12 @@
         margin-top: 12px;
     }
 
-    .button:hover {
-        opacity: 1;
-    }
-
     .button {
         cursor: grab;
+    }
+
+    .button:hover {
+        opacity: 1;
     }
 }
 
