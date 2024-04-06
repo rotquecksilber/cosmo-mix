@@ -10,9 +10,9 @@ import { Metadata } from 'next';
 
 
 
-export const metadata: Metadata = {
-  robots: 'noindex, nofollow'
-};
+// export const metadata: Metadata = {
+//   robots: 'noindex, nofollow'
+// };
 const mulish:NextFont = Mulish({ subsets: [ 'cyrillic' ] });
 
 export default function RootLayout({
