@@ -35,18 +35,19 @@
     background: #563D82;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (width <= 1100px) {
     .small {
         width: 20vw;
         height: 56px;
         font-size: 14px;
     }
+
     .white {
         border-width: 3px;
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (width <= 735px) {
     .small {
         width: 50vw;
         height: 42px;

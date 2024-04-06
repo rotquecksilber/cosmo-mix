@@ -14,8 +14,6 @@
     object-fit: cover;
 }
 
-
-
 .button:hover {
     opacity: 0.8;
 }
@@ -33,12 +31,13 @@
     margin-left: 5%;
     text-align: left;
 }
+
 .button_text_add {
     top: 38%;
 }
 
 .button_htag {
-
+    /* You can add styles here if needed */
 }
 
 .button_span {
@@ -49,78 +48,85 @@
     margin-top: 15px;
 }
 
-@media screen and (max-width: 1425px) {
+@media screen and (width <= 1425px) {
     .button_text {
         width: 90%;
     }
+
     .button_span {
         font-size: 22px;
     }
-
 }
-@media screen and (max-width: 1115px) {
+
+@media screen and (width <= 1115px) {
     .button_span {
         font-size: 18px;
     }
+
     .button_span_add {
         margin-top: 8px;
     }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (width <= 945px) {
     .button_span {
         font-size: 16px;
     }
 }
-@media screen and (max-width: 815px) {
+
+@media screen and (width <= 815px) {
     .button_span {
         font-size: 13px;
     }
+
     .button_span_add {
         margin-top: 5px;
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (width <= 735px) {
     .button_span {
         font-size: 12px;
     }
+
     .button_span_add {
         margin-top: 12px;
     }
+
     .button:hover {
         opacity: 1;
     }
-    .button {
 
+    .button {
         cursor: grab;
     }
-
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (width <= 650px) {
     .button_span {
         font-size: 18px;
         margin-left: 20px;
     }
+
     .button_span_add {
         margin-top: 12px;
     }
+
     .button_image {
         width: 100%;
         border-radius: 20px;
         height: 100%;
     }
+
     .button {
         border-radius: 10px;
     }
+
     .button_htag {
-margin-left: 20px;
+        margin-left: 20px;
     }
+
     .button:hover {
         opacity: 1;
     }
-
 }
-
-

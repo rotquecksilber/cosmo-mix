@@ -7,7 +7,7 @@
     gap: 1vw
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (width <= 650px) {
     .carousel_desktop {
         display: none;
     }

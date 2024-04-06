@@ -1,9 +1,8 @@
 .h2 {
     font-size: 32px;
     font-weight: 800;
-
     background: var(--gradient);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -17,45 +16,51 @@
 .transform_no {
     text-transform: none;
 }
+
 .transform_yes {
     text-transform: uppercase;
 }
 
 
 
-@media screen and (max-width: 1425px) {
+@media screen and (width <= 1425px) {
     .h3 {
         font-size: 22px;
     }
 }
-@media screen and (max-width: 1115px) {
+
+@media screen and (width <= 1115px) {
     .h3 {
         font-size: 18px;
     }
+
 .h2 {
     font-size: 28px;
 }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (width <= 945px) {
     .h3 {
         font-size: 16px;
     }
+
     .h2 {
         font-size: 20px;
     }
 }
-@media screen and (max-width: 815px) {
+
+@media screen and (width <= 815px) {
     .h3 {
         font-size: 14px;
     }
 
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (width <= 735px) {
     .h2 {
         font-size: 16px;
     }
+
     .h3 {
         font-size: 16px;
     }

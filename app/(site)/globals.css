@@ -1,14 +1,19 @@
 :root {
   --gradient: linear-gradient(
           180deg,
-          rgb(86.00000247359276, 61.00000016391277, 130.0000074505806) 0%,
-          rgb(150.0000062584877, 120.00000044703484, 211.00000262260437) 76%,
-          rgb(100.55981799960136, 100.55981799960136, 100.55981799960136) 100%);
+          rgb(86.00000247359276 61.00000016391277 130.0000074505806) 0%,
+          rgb(150.0000062584877 120.00000044703484 211.00000262260437) 76%,
+          rgb(100.55981799960136 100.55981799960136 100.55981799960136) 100%);
   --max-width: 1512px;
 
   box-sizing: border-box;
 
+    --primary-color: #563D82;
+    --background-color: #DDDAE8;
+    --secondary-color: #9648D3;
+
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -28,19 +33,19 @@ body {
 }
 
 
-@media screen and (max-width: 1115px) {
+@media screen and (width <= 1115px) {
     .button_span_add {
         margin-top: 8px;
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (width <= 815px) {
     .button_span_add {
         margin-top: 5px;
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (width <= 735px) {
     .button_span_add {
         margin-top: 12px;
     }

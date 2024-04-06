@@ -16,10 +16,10 @@
     margin-right: 10%;
     text-align: right;
     font-size: 25px;
-
-    color: #563D82;
-    border-top: 2px solid #563D82;
+    color: var(--primary-color);
+    border-top: 2px solid var(--primary-color);
 }
+
 .content_right_add {
     margin-top: 60px;
 }
@@ -27,13 +27,16 @@
 .content_right p {
     margin: 8px 0;
 }
+
 .link {
     text-decoration: none;
-    color: #563D82;
+    color: var(--primary-color);
 }
+
 .link:hover {
     color: #3f0e91;
 }
+
 .content_right_link {
     width: 30%;
     padding: 0;
@@ -42,60 +45,65 @@
     margin-bottom: 10px;
     text-align: right;
     font-size: 25px;
-    border-bottom: 4px solid #563D82;
+    border-bottom: 4px solid var(--primary-color);
 }
 
 
-@media screen and (max-width: 1310px) {
+@media screen and (width <= 1310px) {
     .content_right {
         font-size: 20px;
     }
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (width <= 1100px) {
     .content_right {
         font-size: 18px;
         width: 40%;
     }
+
     .content_title {
         width: 40%;
         margin-left: 10%;
     }
 }
 
-@media screen and (max-width: 935px) {
+@media screen and (width <= 935px) {
     .content_right {
         font-size: 16px;
         width: 38%;
     }
+
     .content_title {
         width: 38%;
         margin-left: 10%;
     }
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (width <= 945px) {
     .content_right {
         font-size: 13px;
         width: 38%;
     }
+
     .content_title {
         width: 38%;
         margin-left: 10%;
     }
 }
 
-@media screen and (max-width: 735px) {
+@media screen and (width <= 735px) {
     .content {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
     .content_title {
         margin-top: 30px;
         width: 70%;
     }
+
     .content_right {
         width: 80%;
         margin-top: 15px;
@@ -104,6 +112,7 @@
         font-size: 13px;
         text-align: left;
     }
+
     .content_right_link {
         margin-right: 10%;
         margin-left: 10%;
@@ -111,7 +120,7 @@
         margin-top: 15px;
         font-size: 13px;
         text-align: left;
-        border-bottom: 3px solid #563D82
+        border-bottom: 3px solid var(--primary-color)
     }
 }
 

@@ -1,12 +1,13 @@
 .header {
     background-color: #fff;
     font-weight: 400;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 .nav {
     max-width: var(--max-width);
     display: flex;
@@ -23,7 +24,7 @@
     cursor: pointer;
 }
 
-.nav_main {
+.nav_additional {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,27 +46,23 @@
 
 .nav_main_link {
     text-decoration: none;
-    color: #563D82;
+    color: var(--primary-color);
 }
 
 .nav_main_link:hover {
     font-weight: 500;
 }
 
-.nav_burger {
-
-    display: none;
-}
-
 .nav_active {
-font-weight: 600;
+    font-weight: 600;
 }
 
 .close_menu {
     display: none;
 }
+
 .burgerMenu {
-    background-color: #DDDAE8;
+    background-color: var(--background-color);
     color: white;
     position: fixed;
     top: 0;
@@ -74,11 +71,10 @@ font-weight: 600;
     height: 100%;
     z-index: 1000;
     overflow: hidden;
-
 }
 
 .menu_wrapper {
-    margin: 20px 30px 10px 30px;
+    margin: 20px 30px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -101,7 +97,7 @@ font-weight: 600;
 
 .menuItem {
     text-decoration: none;
-    color: #563D82;
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 10px;
@@ -115,12 +111,36 @@ font-weight: 600;
     font-weight: 600;
 }
 
+/* Меню бургер */
+.nav_mobile__burger {
+    display: none;
+}
 
-@media screen and (max-width: 735px) {
+.nav_mobile__burger__wrapper {
+    margin-left: 10%;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+@media screen and (width <= 735px) {
     .header {
         height: 80px;
     }
-    .nav_burger {
+
+    .nav_mobile {
+        margin: 0 30px;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_mobile__burger {
         display: block;
         cursor: pointer;
         background: none;
@@ -131,16 +151,7 @@ font-weight: 600;
         display: none;
     }
 
-    .nav_mobile {
-        margin: 0 30px 0;
-        height: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .nav_main {
+    .nav_additional {
         all: unset;
         height: 15px;
     }
@@ -150,27 +161,32 @@ font-weight: 600;
         margin-bottom: 8px;
     }
 }
-@media screen and (max-width: 630px) {
+
+@media screen and (width <= 630px) {
     .content {
         margin-left: -40px;
     }
-    .menuItem {
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 412px) {
-    .content {
-        margin-left: -60px;
-    }
+
     .menuItem {
         font-size: 16px;
     }
 }
 
-@media screen and (min-width: 736px) {
-.burgerMenu {
-    display: none;
+@media screen and (width <= 412px) {
+    .content {
+        margin-left: -60px;
+    }
+
+    .menuItem {
+        font-size: 16px;
+    }
 }
+
+@media screen and (width >= 736px) {
+    .burgerMenu {
+        display: none;
+    }
+
     .content {
         display: none;
     }
@@ -180,25 +196,19 @@ font-weight: 600;
     height: 3px;
     width: 100%;
 }
-.burger_wrapper {
-    margin-left: 10%;
-    width: 50px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-}
+
 .burger_1 {
     border-bottom: 3px solid #9678D3;
     width: 50%;
     margin-left: 50%;
 }
+
 .burger_2 {
-    border-bottom: 3px solid #563D82;
+    border-bottom: 3px solid var(--primary-color);
 }
+
 .burger_3 {
-    border-bottom: 3px solid #563D82;
+    border-bottom: 3px solid var(--primary-color);
     width: 50%;
     margin-right: 50%;
 }
@@ -215,8 +225,6 @@ font-weight: 600;
     left: 0;
     width: 50%;
     height: 100vh;
-    background-color: #DDDAE8; /* Измените цвет фона на ваш выбор */
-    z-index: -1; /* Установите z-index, чтобы фон был под контентом */
+    background-color: var(--background-color);
+    z-index: -1;
 }
-
-
