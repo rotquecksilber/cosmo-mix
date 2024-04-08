@@ -1,6 +1,7 @@
 .h2 {
     font-size: 32px;
     font-weight: 1000;
+margin-right: 20px;
     background: var(--gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -54,7 +55,7 @@
     }
 
     .h2 {
-        font-size: 20px;
+        font-size: 26px;
     }
 }
 
@@ -67,11 +68,18 @@
 
 @media screen and (width <= 735px) {
     .h2 {
-        font-size: 16px;
+        font-size: 22px;
     }
 
     .h3 {
         font-size: 16px;
+    }
+
+}
+
+@media (width <= 370px) {
+    .align_center {
+        text-align: left;
     }
 
 }

@@ -3,7 +3,7 @@ import { Htag, TitleDescription } from '@/app/components';
 import { reasons } from '@/app/components/Blocks/Reasons/reasons.variables';
 import cn from 'classnames';
 import styles from './Reasons.module.css';
-import { mulish } from '@/app/(site)/fonts/fonts';
+
 
 export const Reasons = (): React.JSX.Element => {
   return (
@@ -18,7 +18,7 @@ export const Reasons = (): React.JSX.Element => {
             className={cn(styles.reasons_wrapper, { [styles.middle]: index === Math.floor(reasons.length / 2) })}>
             <div className={styles.reasons_columns}>
               <div className={cn(styles.reasons_title)}>
-                <span className={cn(styles.reasons_id, mulish.className)}>{reason.id}</span>
+                {/*<span className={cn(styles.reasons_id, mulish.className)}>{reason.id}</span>*/}
                 <Htag size={'h3'} transform={'yes'} align={'center'}>
                   <span className={cn(styles.title)}>{reason.title}</span>
                 </Htag>

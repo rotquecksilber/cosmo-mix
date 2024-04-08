@@ -15,7 +15,7 @@
 }
 
 .reasons_text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     max-width: 100%;
     margin: 10px auto;
@@ -23,10 +23,6 @@
 
 .centered {
     text-align: center;
-}
-
-.reasons_id {
-    display: none;
 }
 
 .text_wrapper {
@@ -48,19 +44,11 @@
         border: none;
     }
 
-    .reasons_id {
-        font-size: 40px;
-        font-weight: 800;
-        display: block;
-        margin-bottom: 14px;
-    }
-
     .reasons_title {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 20px
     }
 
     .reasons {
@@ -75,13 +63,6 @@
     }
 }
 
-@media (width <= 815px) {
-    .reasons_id {
-        font-size: 30px;
-        font-weight: 800;
-    }
-
-}
 
 @media (width <= 735px) {
     .reasons_title {
@@ -115,31 +96,10 @@
 }
 
 @media (width <= 370px) {
-    .text_wrapper {
-        justify-content: center;
-    }
-
-    .centered {
-        text-align: center;
-    }
-
-    .reasons_title {
-        justify-content: center;
-        gap: 15px
-    }
-
-    .reasons_id {
-        font-size: 40px;
-        margin-bottom: 16px;
-    }
-
     .reasons_text {
         font-size: 13px;
 
     }
 
-    .title {
-        font-size: 18px;
-    }
 
 }
