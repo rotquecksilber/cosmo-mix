@@ -2,7 +2,7 @@ import React from 'react';
 import cn from 'classnames';
 import styles from '@/app/components/Blocks/common.module.css';
 import localStyles from './Products.module.css';
-import { ButtonBanner, CardStack, Htag } from '@/app/components';
+import { ButtonBanner, CardStack, Htag, TitleDescription } from '@/app/components';
 import { montserrat } from '@/app/(site)/fonts/fonts';
 import Link from 'next/link';
 import {
@@ -20,16 +20,11 @@ export const Products = (): React.JSX.Element => {
     <section>
       <div className="width">
         {/* Блок с заголовком и ссылкой */}
-        <div className={cn(styles.content)}>
-          <div className={cn(styles.content_title)}>
-            <Htag size={'h2'} transform={'yes'}>Что мы<br/>производим?</Htag>
-          </div>
-          <div className={cn(styles.content_right_link, montserrat.className)}>
-            <Link className={cn(styles.link)} href={'/production/dekorativnaya_kosmetika'}>
-              <Htag size={'h3'} transform={'yes'}>Декоративная косметика</Htag>
-            </Link>
-          </div>
-        </div>
+        <TitleDescription
+          title="Что мы производим?"
+          href="/production/dekorativnaya_kosmetika"
+          hrefText={'Декоративная косметика'}
+        />
         <div className={cn(localStyles.carousel_desktop)}>
           {/* Используем map для рендеринга ButtonBanner */}
           {bannersData_decor_1.map((banner, index) => (

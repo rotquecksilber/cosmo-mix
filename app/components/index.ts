@@ -7,4 +7,5 @@ export * from '@/app/components/Blocks/Products/Products';
 export * from '@/app/components/ButtonBanner/ButtonBanner';
 export * from '@/app/components/Blocks/DesktopBanner/DesktopBanner';
 export * from '@/app/components/CardStack/CardStack';
-
+export * from '@/app/components/TitleDescription/TitleDescription';
+export * from '@/app/components/Blocks/Reasons/Reasons';

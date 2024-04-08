@@ -5,14 +5,9 @@ import { HeaderMenu } from '@/app/components/Blocks/HeaderMenu/HeaderMenu';
 import { NextFont } from 'next/dist/compiled/@next/font';
 import cn from 'classnames';
 import React from 'react';
-import { montserrat } from '@/app/(site)/fonts/fonts';
-import { Metadata } from 'next';
 
 
 
-// export const metadata: Metadata = {
-//   robots: 'noindex, nofollow'
-// };
 const mulish:NextFont = Mulish({ subsets: [ 'cyrillic' ] });
 
 export default function RootLayout({
@@ -22,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(mulish.className, montserrat.className)}>
+      <body className={cn(mulish.className)}>
         <HeaderMenu/>
         {children}
       </body>

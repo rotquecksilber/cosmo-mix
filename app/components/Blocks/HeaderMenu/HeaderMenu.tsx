@@ -15,6 +15,7 @@ import {
 } from '@/app/components/Blocks/HeaderMenu/animations/animations';
 import { JsonLd } from 'react-schemaorg';
 import { SiteNavigationElement } from 'schema-dts';
+import { webSite } from '@/app/variables';
 /**
  * HeaderMenu компонент представляет собой навигационное меню заголовка.
  */
@@ -100,7 +101,7 @@ export const HeaderMenu = (): React.JSX.Element => {
             item={{
               '@context': 'https://schema.org',
               '@type': 'SiteNavigationElement',
-              'url': `https://cosmo-mix.com${item.href}`,
+              'url': `${webSite}${item.href}`,
               'name': item.text
             }}
           />

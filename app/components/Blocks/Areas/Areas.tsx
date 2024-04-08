@@ -1,8 +1,7 @@
 import cn from 'classnames';
-import styles from '../common.module.css';
 import localStyles from './Areas.module.css';
 import React from 'react';
-import { Htag } from '@/app/components';
+import { Htag, TitleDescription } from '@/app/components';
 import { montserrat } from '@/app/(site)/fonts/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,17 +12,13 @@ import Link from 'next/link';
  */
 export const Areas = (): React.JSX.Element => {
   return (
-    <section>
-      <div className={cn(localStyles.content_margin, 'width')}>
+    <section className={'width'}>
+      <div className={cn(localStyles.content_margin)}>
         {/* Блок с заголовком и описанием */}
-        <div className={cn(styles.content)}>
-          <div className={cn(styles.content_title)}>
-            <Htag size={'h2'} transform={'yes'}>Производственные направления</Htag>
-          </div>
-          <div className={cn(styles.content_right, montserrat.className)}>
-            <p role={'note'}>Мы придаем первостепенное значение качеству косметических продуктов</p>
-          </div>
-        </div>
+        <TitleDescription
+          title="Производственные направления"
+          description="Мы придаем первостепенное значение качеству косметических продуктов"
+        />
 
         {/* Блок с изображениями и описаниями направлений */}
         <div className={cn(localStyles.content_images)}>

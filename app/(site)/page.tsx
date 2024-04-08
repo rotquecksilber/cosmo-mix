@@ -1,23 +1,24 @@
 import styles from './page.module.css';
 import cn from 'classnames';
-import { Areas, DesktopBanner, MobileBanner, Products } from '@/app/components';
+import { Areas, DesktopBanner, MobileBanner, Products, Reasons } from '@/app/components';
 import { montserrat } from '@/app/(site)/fonts/fonts';
 import React from 'react';
 import { Metadata } from 'next';
 import { JsonLd } from 'react-schemaorg';
 import { WebPage } from 'schema-dts';
+import { webSite } from '@/app/variables';
 
 export const metadata: Metadata = {
   title: 'Контрактное производство косметики на заказ под собственным брендом - COSMOMIX',
   description: 'Контрактное производство косметики на заказ под собственным брендом СТМ, готовая продукция через 7 дней, используем современное оборудование, производим косметику по проверенным рецептам.',
   openGraph: {
     type: 'website',
-    url: 'https://cosmo-mix.com',
+    url: webSite,
     title: 'Контрактное производство косметики на заказ под собственным брендом - COSMOMIX',
     description: 'Контрактное производство косметики на заказ под собственным брендом СТМ, готовая продукция через 7 дней, используем современное оборудование, производим косметику по проверенным рецептам.',
     siteName: 'COSMOMIX',
     images: [ {
-      url: 'https://cosmo-mix.com/home/banner_desktop.webp'
+      url: `${webSite}/home/banner_desktop.webp`
     } ]
   }
 };
@@ -34,22 +35,30 @@ export default function Home() {
         item={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          'url': 'https://cosmo-mix.com',
+          'url': webSite,
           'name': 'Контрактное производство косметики на заказ под собственным брендом - COSMOMIX',
-          'description': 'Контрактное производство косметики на заказ под собственным брендом СТМ, готовая продукция через 7 дней, используем современное оборудование, производим косметику по проверенным рецептам.'
+          'description': 'Контрактное производство косметики на заказ под собственным брендом СТМ, готовая продукция через 7 дней, используем современное оборудование, производим косметику по проверенным рецептам.',
+          'primaryImageOfPage': {
+            '@type': 'ImageObject',
+            'url': `${webSite}/home/banner_desktop.webp`
+          }
         }}
       />
       {/* Баннер с изображением */}
       <section>
-        <DesktopBanner/>
+        <DesktopBanner />
         {/* Мобильный баннер */}
         <div className={cn(styles.mobile)}>
-          <MobileBanner/>
+          <MobileBanner />
         </div>
       </section>
       {/* Основной контент сайта */}
-      <Areas/>
-      <Products/>
+      <Areas />
+      <Products />
+      <Reasons />
+      <div><br /></div>
+      <div><br /></div>
+      <div><br /></div>
     </main>
   );
 }

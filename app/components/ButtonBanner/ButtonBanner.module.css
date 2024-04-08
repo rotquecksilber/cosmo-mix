@@ -42,6 +42,7 @@
 
 .button_span {
     font-size: 24px;
+    width: 90%;
 }
 
 .button_span_add {
@@ -106,6 +107,7 @@
     .button_span {
         font-size: 18px;
         margin-left: 20px;
+        margin-top: 15px;
     }
 
     .button_span_add {
@@ -128,5 +130,12 @@
 
     .button:hover {
         opacity: 1;
+    }
+}
+
+@media screen and (width <= 450px) {
+    .button_span {
+        margin-top: 5px;
+        font-size: 14px;
     }
 }

@@ -1,6 +1,6 @@
 .h2 {
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 1000;
     background: var(--gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -8,9 +8,10 @@
 
 .h3 {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     margin-top: 0;
+
 }
 
 .transform_no {
@@ -19,6 +20,14 @@
 
 .transform_yes {
     text-transform: uppercase;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
 }
 
 
@@ -66,4 +75,3 @@
     }
 
 }
-

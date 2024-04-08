@@ -54,3 +54,11 @@
         font-size: 14px;
     }
 }
+
+@media screen and (width >= 2500px) {
+    .small {
+        width: 400px;
+        height: 42px;
+        font-size: 14px;
+    }
+}

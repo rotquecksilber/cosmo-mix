@@ -191,5 +191,13 @@
         color: white;
         z-index: 1;
     }
+
+    .left_part {
+        gap: 30px;
+    }
+
+    .right_part {
+        gap: 30px;
+    }
 }
 
