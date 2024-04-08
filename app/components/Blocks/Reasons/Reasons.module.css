@@ -91,6 +91,7 @@
 
 @media (width <= 470px) {
     .text_wrapper {
+        margin-top: 10px;
         justify-content: flex-start;
     }
 }
@@ -101,5 +102,7 @@
 
     }
 
-
+    .text_wrapper {
+        margin-top: 5px;
+    }
 }
