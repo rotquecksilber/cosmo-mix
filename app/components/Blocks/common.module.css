@@ -87,7 +87,7 @@
     }
 
     .content_title {
-        width: 38%;
+        width: 50%;
         margin-left: 10%;
     }
 }
@@ -124,3 +124,8 @@
     }
 }
 
+@media screen and (width <= 410px) {
+    .content_title {
+width: 90%;
+    }
+}
