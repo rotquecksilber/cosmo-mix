@@ -1,7 +1,7 @@
 .h2 {
     font-size: 32px;
     font-weight: 1000;
-margin-right: 20px;
+    margin-right: 20px;
     background: var(--gradient);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -12,8 +12,10 @@ margin-right: 20px;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 0;
-
+margin-bottom: 0.5em;
 }
+
+
 
 .transform_no {
     text-transform: none;

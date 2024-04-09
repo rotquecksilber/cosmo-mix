@@ -29,7 +29,7 @@ export const Products = (): React.JSX.Element => {
           {/* Используем map для рендеринга ButtonBanner */}
           {bannersData_decor_1.map((banner, index) => (
             <ButtonBanner
-              key={index}
+              key={index + 'decor'}
               htagClassName={banner.htagClassName}
               spanClassName={banner.spanClassName}
               htagText={banner.htagText}
@@ -53,7 +53,7 @@ export const Products = (): React.JSX.Element => {
         <div className={cn(localStyles.carousel_desktop)}>
           {bannersData_decor_2.map((banner, index) => (
             <ButtonBanner
-              key={index}
+              key={index + 'uhod'}
               htagClassName={banner.htagClassName}
               spanClassName={banner.spanClassName}
               htagText={banner.htagText}

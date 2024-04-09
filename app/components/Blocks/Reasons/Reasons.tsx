@@ -14,7 +14,7 @@ export const Reasons = (): React.JSX.Element => {
       />
       <div className={cn(styles.reasons)}>
         {reasons.map((reason, index) => (
-          <div key={reason.id}
+          <div key={reason.id + 'reason'}
             className={cn(styles.reasons_wrapper, { [styles.middle]: index === Math.floor(reasons.length / 2) })}>
             <div className={styles.reasons_columns}>
               <div className={cn(styles.reasons_title)}>
