@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 7fr;  /* 3 столбца */
     grid-auto-rows: min-content;   /* 9 строк */
-    gap: 40px;
+    grid-gap: 40px;
     margin: 15px 10%;
 }
 
@@ -185,5 +185,10 @@
     .grid_text__8,
     .grid_text__9 {
         font-size: 15px;
+    }
+
+
+    .grid_container {
+        grid-gap: 25px;
     }
 }

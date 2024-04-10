@@ -12,3 +12,4 @@ export * from '@/app/components/CardStack/CardStack';
 export * from '@/app/components/TitleDescription/TitleDescription';
 export * from '@/app/components/Blocks/Reasons/Reasons';
 export * from '@/app/components/Blocks/Stages/Stages';
+export * from '@/app/components/Blocks/PB/PB';
