@@ -5,6 +5,8 @@ import { HeaderMenu } from '@/app/components/Blocks/HeaderMenu/HeaderMenu';
 import { NextFont } from 'next/dist/compiled/@next/font';
 import cn from 'classnames';
 import React from 'react';
+import UpButton from '@/app/components/UpButton/UpButton';
+
 
 
 
@@ -20,6 +22,7 @@ export default function RootLayout({
       <body className={cn(mulish.className)}>
         <HeaderMenu/>
         {children}
+        <UpButton/>
       </body>
     </html>
   );

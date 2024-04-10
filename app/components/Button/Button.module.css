@@ -38,6 +38,11 @@
 
 .purple {
     background: #563D82;
+    transition: background 0.3s ease;
+}
+
+.purple:hover {
+    background: #321d5b;
 }
 
 @media screen and (width <= 1100px) {
