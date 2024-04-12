@@ -28,6 +28,8 @@
     grid-row: 1 / span 2;
 }
 
+
+
 .grid_offer {
     font-size: 30px;
     font-weight: 600;
@@ -107,7 +109,6 @@
     }
 
     .grid_text {
-
         font-size: 18px;
         grid-column: 1;
         grid-row: 2;

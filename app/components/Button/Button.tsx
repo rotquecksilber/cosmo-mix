@@ -15,7 +15,8 @@ export const Button = ({
     [styles.middle]: size === 'middle',
     [styles.small]: size === 'small',
     [styles.white]: buttonColor === 'white',
-    [styles.purple]: buttonColor === 'purple'
+    [styles.purple]: buttonColor === 'purple',
+    [styles.gradient]: buttonColor === 'gradient'
   });
   return (
     <button className={buttonClasses} role={'button'} aria-label={aria_label}>

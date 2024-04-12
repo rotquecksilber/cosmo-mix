@@ -1,5 +1,3 @@
-import exp from 'node:constants';
-
 export * from '@/app/components/Blocks/HeaderMenu/HeaderMenu';
 export * from '@/app/components/Button/Button';
 export * from '@/app/components/Htag/Htag';
@@ -14,3 +12,5 @@ export * from '@/app/components/Blocks/Reasons/Reasons';
 export * from '@/app/components/Blocks/Stages/Stages';
 export * from '@/app/components/Blocks/PB/PB';
 export * from '@/app/components/UpButton/UpButton';
+export * from '@/app/components/Blocks/Offers/Offers';
+export * from '@/app/components/Accordion/Accordion';

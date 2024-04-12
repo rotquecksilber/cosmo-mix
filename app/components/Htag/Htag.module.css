@@ -39,6 +39,10 @@ margin-bottom: 0.5em;
     .h3 {
         font-size: 22px;
     }
+
+    .transform_no {
+        font-size: 24px;
+    }
 }
 
 @media screen and (width <= 1115px) {
@@ -49,6 +53,10 @@ margin-bottom: 0.5em;
 .h2 {
     font-size: 28px;
 }
+
+    .transform_no {
+        font-size: 20px;
+    }
 }
 
 @media screen and (width <= 945px) {
@@ -59,11 +67,19 @@ margin-bottom: 0.5em;
     .h2 {
         font-size: 26px;
     }
+
+    .transform_no {
+        font-size: 26px;
+    }
 }
 
 @media screen and (width <= 815px) {
     .h3 {
         font-size: 14px;
+    }
+
+    .transform_no {
+        font-size: 24px;
     }
 
 }
@@ -77,6 +93,10 @@ margin-bottom: 0.5em;
         font-size: 16px;
     }
 
+    .transform_no {
+        font-size: 18px;
+    }
+
 }
 
 @media (width <= 370px) {
@@ -84,4 +104,7 @@ margin-bottom: 0.5em;
         text-align: left;
     }
 
+    .transform_no {
+        font-size: 16px;
+    }
 }
