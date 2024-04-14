@@ -1,0 +1,5 @@
+@media screen and (width <= 946px) {
+    .up {
+        display: none
+    }
+}

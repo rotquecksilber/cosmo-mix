@@ -1,6 +1,16 @@
 import styles from './page.module.css';
 import cn from 'classnames';
-import { Areas, DesktopBanner, MobileBanner, Offers, PB, Products, Reasons, Stages } from '@/app/components';
+import {
+  Areas,
+  Certificates,
+  DesktopBanner,
+  MobileBanner,
+  Offers,
+  PB,
+  Products,
+  Reasons,
+  Stages
+} from '@/app/components';
 import { montserrat } from '@/app/(site)/fonts/fonts';
 import React from 'react';
 import { Metadata } from 'next';
@@ -59,6 +69,7 @@ export default function Home() {
       <PB />
       <Stages />
       <Offers />
+      <Certificates />
       <div><br /></div>
       <div><br /></div>
       <div><br /></div>

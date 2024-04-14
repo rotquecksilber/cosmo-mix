@@ -37,6 +37,7 @@ export const Accordion = (props: AccordionProps): React.JSX.Element => {
                 animate={{ rotateX: isOpen ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
               >
+
                 <Image
                   src={'/header/arrow.svg'}
                   alt={'Открыть/закрыть раскрывающийся список'}
@@ -44,14 +45,12 @@ export const Accordion = (props: AccordionProps): React.JSX.Element => {
                   width={48}
                 />
               </motion.div>
+
             </div>
             <AnimatePresence initial={false}>
               {isOpen && (
                 <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ type: 'spring', duration: 0.4, bounce: 0 }}
+
                 >
                   <div className={styles.block}>
                     <div  className={styles.content}>

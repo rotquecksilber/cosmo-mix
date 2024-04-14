@@ -14,3 +14,5 @@ export * from '@/app/components/Blocks/PB/PB';
 export * from '@/app/components/UpButton/UpButton';
 export * from '@/app/components/Blocks/Offers/Offers';
 export * from '@/app/components/Accordion/Accordion';
+export * from '@/app/components/Blocks/Certificates/Certificates';
+export * from '@/app/components/Carousel/Carousel';

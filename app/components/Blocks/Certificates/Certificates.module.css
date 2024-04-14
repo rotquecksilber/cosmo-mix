@@ -1,0 +1,23 @@
+.certificates_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    gap: 10px;
+}
+
+.certificates_photo {
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+    border: 8px solid var(--primary-color);
+}
+
+@media screen and (width <= 945px) {
+    .certificates_wrapper {
+        display: none;
+    }
+
+}
+
