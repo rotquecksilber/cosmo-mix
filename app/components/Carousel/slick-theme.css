@@ -1,0 +1,11 @@
+
+.slick-dots li button::before
+{
+    color: var(--primary-color) !important;
+}
+
+.slick-dots li.slick-active button::before
+{
+    color: var(--primary-color) !important;
+}
+
