@@ -19,5 +19,14 @@
         display: none;
     }
 
+    .certificates_photo {
+        margin: 20px -9px 0;
+    }
+
 }
 
+@media screen and (width <= 600px) {
+    .certificates_photo {
+        margin: 20px -6px 0;
+    }
+}

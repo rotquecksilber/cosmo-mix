@@ -22,12 +22,12 @@ export const Carousel = ({ children }: Props) => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 945, // Примерный размер экрана, на котором хотите показывать 2 слайда
+        breakpoint: 946, // Примерный размер экрана, на котором хотите показывать 2 слайда
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           centerMode: false, // Отключаем центрирование для разрешений, на которых показываем 2 слайда
-          centerPadding: '0px' // Устанавливаем отступы между слайдами в 0
+          centerPadding: '10%' // Устанавливаем отступы между слайдами в 0
         }
       },
       {

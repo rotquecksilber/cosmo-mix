@@ -5,7 +5,7 @@ import {
   Certificates,
   DesktopBanner,
   MobileBanner,
-  Offers,
+  Offers, Partners,
   PB,
   Products,
   Reasons,
@@ -70,6 +70,7 @@ export default function Home() {
       <Stages />
       <Offers />
       <Certificates />
+      <Partners />
       <div><br /></div>
       <div><br /></div>
       <div><br /></div>

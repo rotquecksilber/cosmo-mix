@@ -16,3 +16,4 @@ export * from '@/app/components/Blocks/Offers/Offers';
 export * from '@/app/components/Accordion/Accordion';
 export * from '@/app/components/Blocks/Certificates/Certificates';
 export * from '@/app/components/Carousel/Carousel';
+export * from '@/app/components/Blocks/Partners/Partners';
