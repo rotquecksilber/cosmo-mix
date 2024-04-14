@@ -1,0 +1,21 @@
+.partners_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+}
+
+.partner {
+    border: 20px solid var(--primary-color);
+}
+
+/*.image {*/
+/*    width: 90%;*/
+/*    height: 90%;*/
+/*}*/
+
+
+@media (width <= 845px) {}

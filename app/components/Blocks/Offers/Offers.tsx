@@ -59,7 +59,6 @@ export const Offers = (): React.JSX.Element => {
     <section className={'width'} >
       <TitleDescription
         title={<><span>Предложения под</span><br /><span>конкретный бизнес</span></>}
-        // description={<>Мы подготовили для вас конкретные варианты сотрудничества</>}
       />
       <div className={styles.window}>
         <div className={styles.nav}>
