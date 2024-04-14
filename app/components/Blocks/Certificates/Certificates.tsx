@@ -28,16 +28,18 @@ export const Certificates =(): React.JSX.Element => {
       />
       <div className={styles.certificates_wrapper}>
         {certificatesPhoto.map(item => (
-
-          <Image
+          <div
             key={item.id + 'certificate'}
-            src={item.link}
-            alt={'Сертификат' + item.id}
-            width={370}
-            height={567}
-            className={styles.certificates_photo}
-          />
-
+            className={styles.image_wrapper}
+          >
+            <Image
+              src={item.link}
+              alt={'Сертификат' + item.id}
+              width={370}
+              height={567}
+              className={styles.certificates_photo}
+            />
+          </div>
         ))}
       </div>
       <div>

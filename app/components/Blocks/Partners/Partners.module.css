@@ -3,19 +3,33 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 10%;
-    width: 90%;
+    width: 80%;
     height: 90%;
     max-width: 1200px;
+    gap: 10px;
+
 }
 
 .partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 20px solid var(--primary-color);
 }
 
-/*.image {*/
-/*    width: 90%;*/
-/*    height: 90%;*/
-/*}*/
+.image {
+    width: 100%;
+    height: 100%;
+}
 
 
-@media (width <= 845px) {}
+@media (width <= 945px) {
+
+    .partners_wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}

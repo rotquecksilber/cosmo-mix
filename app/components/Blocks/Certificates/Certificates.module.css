@@ -5,6 +5,7 @@
     align-items: center;
     margin: 0 10%;
     gap: 10px;
+    max-width: 1200px;
 }
 
 .certificates_photo {
@@ -12,6 +13,12 @@
     width: 90%;
     height: 90%;
     border: 8px solid var(--primary-color);
+}
+
+.image_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (width <= 945px) {

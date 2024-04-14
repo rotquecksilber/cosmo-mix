@@ -11,16 +11,16 @@ export const Partners = (): React.JSX.Element => {
 
       <div className={styles.partners_wrapper}>
         <div className={styles.partner}>
-          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image}/>
+          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image} />
         </div>
         <div className={styles.partner}>
-          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image}/>
+          <Image src={'/home/nyx.webp'} width={225} height={225} alt={'nyx'} className={styles.image} />
         </div>
         <div className={styles.partner}>
-          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image}/>
+          <Image src={'/home/vichy.webp'} width={225} height={225} alt={'vichy'} className={styles.image} />
         </div>
         <div className={styles.partner}>
-          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image}/>
+          <Image src={'/home/ga.webp'} width={225} height={225} alt={'ga'} className={styles.image} />
         </div>
       </div>
     </section>
