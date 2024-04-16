@@ -3,6 +3,7 @@ export interface TabItem {
   description: string;
   photo: string;
   href: string;
+  device: 'mobile' | 'desktop';
 }
 
 export interface OffersDesktopProps {

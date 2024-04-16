@@ -3,13 +3,13 @@ import cn from 'classnames';
 import {
   Areas,
   Certificates,
-  DesktopBanner,
+  DesktopBanner, Faq, Interesting,
   MobileBanner,
   Offers, Partners,
   PB,
   Products,
   Reasons,
-  Stages
+  Stages, Team
 } from '@/app/components';
 import { montserrat } from '@/app/(site)/fonts/fonts';
 import React from 'react';
@@ -71,6 +71,10 @@ export default function Home() {
       <Offers />
       <Certificates />
       <Partners />
+      <Interesting />
+      <Team />
+      <Faq />
+
       <div><br /></div>
       <div><br /></div>
       <div><br /></div>

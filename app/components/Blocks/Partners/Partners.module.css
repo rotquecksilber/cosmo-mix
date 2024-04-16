@@ -24,7 +24,6 @@
 
 
 @media (width <= 945px) {
-
     .partners_wrapper {
         display: grid;
         grid-template-rows: 1fr 1fr;

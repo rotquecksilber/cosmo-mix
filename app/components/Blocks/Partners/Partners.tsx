@@ -3,6 +3,12 @@ import React from 'react';
 import styles from './Partners.module.css';
 import Image from 'next/image';
 
+const partnersData = [
+  { src: '/home/yr.webp', alt: 'yves rocher' },
+  { src: '/home/nyx.webp', alt: 'nyx' },
+  { src: '/home/vichy.webp', alt: 'vichy' },
+  { src: '/home/ga.webp', alt: 'ga' }
+];
 
 export const Partners = (): React.JSX.Element => {
   return (
@@ -10,18 +16,11 @@ export const Partners = (): React.JSX.Element => {
       <TitleDescription title={'Партнеры'} />
 
       <div className={styles.partners_wrapper}>
-        <div className={styles.partner}>
-          <Image src={'/home/yr.webp'} width={225} height={225} alt={'yves rocher'} className={styles.image} />
-        </div>
-        <div className={styles.partner}>
-          <Image src={'/home/nyx.webp'} width={225} height={225} alt={'nyx'} className={styles.image} />
-        </div>
-        <div className={styles.partner}>
-          <Image src={'/home/vichy.webp'} width={225} height={225} alt={'vichy'} className={styles.image} />
-        </div>
-        <div className={styles.partner}>
-          <Image src={'/home/ga.webp'} width={225} height={225} alt={'ga'} className={styles.image} />
-        </div>
+        {partnersData.map((partner, index) => (
+          <div key={index} className={styles.partner}>
+            <Image src={partner.src} width={225} height={225} alt={partner.alt} className={styles.image} />
+          </div>
+        ))}
       </div>
     </section>
   );

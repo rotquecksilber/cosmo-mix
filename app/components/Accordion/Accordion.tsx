@@ -21,11 +21,14 @@ export const Accordion = (props: AccordionProps): React.JSX.Element => {
   return (
     <ul className={cn('width', styles.ul)}>
       {props.data.map((item, index) => {
-        const { title, description, photo, href } = item;
+        const { title, description, photo, href, device } = item;
         const isOpen = isOpenIndex === index;
 
         return (
-          <li key={ index + 'accordion' } className={styles.li}>
+          <li key={ index + 'accordion' } className={cn(styles.li, {
+            [styles.mobile]: item.device === 'mobile',
+            [styles.desktop]: item.device === 'desktop'
+          })}>
             <div
               className={styles.title}
               onClick={() => handleClick(index)}
